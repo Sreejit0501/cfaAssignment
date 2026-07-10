@@ -1,0 +1,335 @@
+
+@import 'config';
+@import 'resets';
+
+
+.main-container{
+   max-width: 7xl;
+   margin: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: $bg-page;
+  color: $text-dark;
+}
+
+// ===== Header =====
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $blue-dark;
+  padding: 14px 200px;
+
+  &__logo {
+    color: $yellow;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid $yellow;
+    border-radius: 6px;
+    padding: 8px 16px;
+  }
+
+  &__search {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    margin: 0 30px;
+
+    input {
+      flex: 1;
+      border: none;
+      border-radius: 6px 0 0 6px;
+      padding: 10px 14px;
+     background: rgba(255, 255, 255, 0.2); 
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); 
+      color: $white;
+      &::placeholder {
+      color: $border-gray;
+      }
+      outline: none;
+      font-size: 14px;
+    }
+
+    &-btn {
+      background: $yellow;
+      border: none;
+      border-radius: 0 6px 6px 0;
+      padding: 0 16px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &-search-svg{
+         width: 16px;
+         height: 16px;
+         font-weight: 1200;
+      }
+    }
+
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__cart {
+    color: $white;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+
+    &-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+     &-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+    &-badge {
+      background: #e63946;
+      color: $white;
+      border-radius: 100%;
+      font-size: 11px;
+      padding: 1px 6px;
+      position: absolute;
+      top: -10px;
+      right: -14px;
+    }
+  }
+
+  &__user {
+    background: rgba(255, 255, 255, 0.15);
+    color: $white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &-content{
+       display: flex;
+    align-items: center;
+    gap: 8px;
+    }
+     &-icon{
+       width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    font-weight:900;
+     }
+
+    &-arrow {
+      font-size: 12px;
+    }
+  }
+}
+
+// main  container
+.main {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+  padding: 40px 200px;
+}
+
+//  Payment Section 
+.payment {
+  position: relative;
+  background: $white;
+  border-radius: 8px;
+  padding: 30px;
+  flex: 2;
+
+  &__step-number {
+    position: absolute;
+    top: -18px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background: $green;
+    color: $white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    margin: 20px 0 10px;
+  }
+
+  &__divider {
+    border: none;
+    border-top: 1px solid $border-gray;
+    margin-bottom: 15px;
+  }
+}
+
+// Card Option 
+.card-option {
+  display: flex;
+  align-items: flex start;
+  gap: 14px;
+  background: #f7f7f9;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  cursor: pointer;
+
+
+  &__radio {
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    accent-color: $blue-btn;
+  }
+
+  &__details {
+    flex: 1;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: $text-gray;
+    padding: 2px 0;
+  }
+
+  &__brand {
+    color: $blue-btn;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+
+  &__bold {
+    font-weight: bold;
+    color: $text-dark;
+  }
+}
+
+//Other Payment Methods 
+.other-methods {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: $text-gray;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 32px;
+  }
+   &_text{
+     font-weight: 600;
+   }
+}
+
+// Buy Now Pay Later 
+.bnpl {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: $bnpl-bg;
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin: 10px 0 25px;
+  cursor: pointer;
+
+  &__radio {
+    margin-top: 4px;
+    accent-color: $bnpl-red;
+  }
+  &__details{
+     padding-right:12px;
+  }
+  &__title {
+    color: $bnpl-red;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $text-gray;
+    line-height: 1.4;
+  }
+}
+
+//  Button
+.btn {
+  background: $blue-btn;
+  color: $white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &--full {
+    width: 100%;
+  }
+}
+
+//Order Summary Section 
+.summary {
+  background: $white;
+  border-radius: 8px;
+  padding: 25px;
+  flex: 1;
+  max-width: 320px;
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: $text-dark;
+    margin-bottom: 12px;
+
+    &--total {
+      font-weight: bold;
+      color: $blue-btn;
+      font-size: 15px;
+    }
+  }
+
+  &__divider {
+    border: none;
+    border-top: 1px solid $border-gray;
+    margin: 10px 0 15px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}

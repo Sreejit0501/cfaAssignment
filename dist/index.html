@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GG Gadget Galaxy - Payment</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+   <div class="main-container">
+     
+
+  <!-- header  -->
+  <header class="header"> 
+    
+    <div class="header__logo">GG Gadget Galaxy</div>
+    <div class="header__search">
+      <input type="text" placeholder="Search for products, brand, and more">
+      <button class="header__search-btn">
+      <svg viewBox="0 0 32 32" class="header__search-btn-search-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="10"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>search</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-256.000000, -1139.000000)" fill="#000000"> <path d="M269.46,1163.45 C263.17,1163.45 258.071,1158.44 258.071,1152.25 C258.071,1146.06 263.17,1141.04 269.46,1141.04 C275.75,1141.04 280.85,1146.06 280.85,1152.25 C280.85,1158.44 275.75,1163.45 269.46,1163.45 L269.46,1163.45 Z M287.688,1169.25 L279.429,1161.12 C281.591,1158.77 282.92,1155.67 282.92,1152.25 C282.92,1144.93 276.894,1139 269.46,1139 C262.026,1139 256,1144.93 256,1152.25 C256,1159.56 262.026,1165.49 269.46,1165.49 C272.672,1165.49 275.618,1164.38 277.932,1162.53 L286.224,1170.69 C286.629,1171.09 287.284,1171.09 287.688,1170.69 C288.093,1170.3 288.093,1169.65 287.688,1169.25 L287.688,1169.25 Z" id="search" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+      </button>
+    </div>
+
+    <div class="header__right">
+      <div class="header__cart">
+        <span class="header__cart-content">
+    <svg class="header__cart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+        stroke="#fff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+    <span>Cart</span>
+  </span>
+        <span class="header__cart-badge">2</span>
+      </div>
+      <div class="header__user">
+        <span class="header__user-content"> 
+           <svg class="header__user-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+         <span class="header__user-text">
+           John Doe
+         </span>
+        </span>
+        <span class="header__user-arrow">&#9662;</span>
+      </div>
+    </div>
+     
+  </header>
+
+  <!-- main body  -->
+  <main class="main">
+
+    <!-- payment cards section -->
+    <section class="payment">
+      <div class="payment__step-number">1</div>
+      <h2 class="payment__title">Payment Options:</h2>
+
+      <!-- cards -->
+      <h3 class="payment__subtitle">Credit or Debit Card</h3>
+      <hr class="payment__divider">
+
+      <label class="card-option">
+        <input type="radio" name="payment" class="card-option__radio">
+        <div class="card-option__details">
+          <div class="card-option__row">
+            <span>Card Number:</span>
+            <span><span class="card-option__brand">VISA</span> XXXX-XXXX-XXXX-1234</span>
+          </div>
+          <div class="card-option__row">
+            <span>Name On Card:</span>
+            <span class="card-option__bold">John Doe</span>
+          </div>
+          <div class="card-option__row">
+            <span>Exipry</span>
+            <span>11/2027</span>
+          </div>
+        </div>
+      </label>
+
+      <label class="card-option card-option--selected">
+        <input type="radio" name="payment" class="card-option__radio" checked>
+        <div class="card-option__details">
+          <div class="card-option__row">
+            <span>Card Number:</span>
+            <span><span class="card-option__brand">VISA</span> XXXX-XXXX-XXXX-1234</span>
+          </div>
+          <div class="card-option__row">
+            <span>Name On Card:</span>
+            <span class="card-option__bold">John Doe</span>
+          </div>
+          <div class="card-option__row">
+            <span>Exipry</span>
+            <span>11/2027</span>
+          </div>
+        </div>
+      </label>
+
+      <!-- others section  -->
+      <h3 class="payment__subtitle">Other Payment Methods (Apple Pay, Paypal)</h3>
+      <hr class="payment__divider">
+
+      <div class="other-methods">
+        <!-- apple pay container -->
+        <div class="other-methods__item">
+          <div class="other-methods__icon">
+            <svg fill="#000000" viewBox="0 -34.55 120.3 120.3" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22.8 6.6c1.4-1.8 2.4-4.2 2.1-6.6-2.1.1-4.6 1.4-6.1 3.1-1.3 1.5-2.5 4-2.2 6.3 2.4.3 4.7-1 6.2-2.8M24.9 10c-3.4-.2-6.3 1.9-7.9 1.9-1.6 0-4.1-1.8-6.8-1.8-3.5.1-6.7 2-8.5 5.2-3.6 6.3-1 15.6 2.6 20.7 1.7 2.5 3.8 5.3 6.5 5.2 2.6-.1 3.6-1.7 6.7-1.7s4 1.7 6.8 1.6 4.6-2.5 6.3-5.1c2-2.9 2.8-5.7 2.8-5.8-.1-.1-5.5-2.1-5.5-8.3-.1-5.2 4.2-7.7 4.4-7.8-2.3-3.6-6.1-4-7.4-4.1"></path> <g> <path d="M54.3 2.9c7.4 0 12.5 5.1 12.5 12.4 0 7.4-5.2 12.5-12.7 12.5H46v12.9h-5.9V2.9h14.2zm-8.3 20h6.7c5.1 0 8-2.8 8-7.5 0-4.8-2.9-7.5-8-7.5h-6.8v15h.1zM68.3 33c0-4.8 3.7-7.8 10.3-8.2l7.6-.4v-2.1c0-3.1-2.1-4.9-5.5-4.9-3.3 0-5.3 1.6-5.8 4h-5.4c.3-5 4.6-8.7 11.4-8.7 6.7 0 11 3.5 11 9.1v19h-5.4v-4.5h-.1c-1.6 3.1-5.1 5-8.7 5-5.6 0-9.4-3.4-9.4-8.3zm17.9-2.5v-2.2l-6.8.4c-3.4.2-5.3 1.7-5.3 4.1 0 2.4 2 4 5 4 4 0 7.1-2.7 7.1-6.3zM96.9 51v-4.6c.4.1 1.4.1 1.8.1 2.6 0 4-1.1 4.9-3.9 0-.1.5-1.7.5-1.7l-10-27.6h6.1l7 22.5h.1l7-22.5h6L110 42.4c-2.4 6.7-5.1 8.8-10.8 8.8-.4-.1-1.8-.1-2.3-.2z"></path> </g> </g></svg>
+          </div>
+          <span class="other-methods_text">Apple Pay</span>
+        </div>
+        <!-- paypal container -->
+        <div class="other-methods__item">
+          <div class="other-methods__icon">
+            <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#FFFFFF;} .st1{fill:#3A559F;} .st2{fill:#F4F4F4;} .st3{fill:#FF0084;} .st4{fill:#0063DB;} .st5{fill:#00ACED;} .st6{fill:#FFEC06;} .st7{fill:#FF0000;} .st8{fill:#25D366;} .st9{fill:#0088FF;} .st10{fill:#314358;} .st11{fill:#EE6996;} .st12{fill:#01AEF3;} .st13{fill:#FFFEFF;} .st14{fill:#F06A35;} .st15{fill:#00ADEF;} .st16{fill:#1769FF;} .st17{fill:#1AB7EA;} .st18{fill:#6001D1;} .st19{fill:#E41214;} .st20{fill:#05CE78;} .st21{fill:#7B519C;} .st22{fill:#FF4500;} .st23{fill:#00F076;} .st24{fill:#FFC900;} .st25{fill:#00D6FF;} .st26{fill:#FF3A44;} .st27{fill:#FF6A36;} .st28{fill:#0061FE;} .st29{fill:#F7981C;} .st30{fill:#EE1B22;} .st31{fill:#EF3561;} .st32{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;} .st33{fill:#0097D3;} .st34{fill:#01308A;} .st35{fill:#019CDE;} .st36{fill:#FFD049;} .st37{fill:#16A05D;} .st38{fill:#4486F4;} .st39{fill:none;} .st40{fill:#34A853;} .st41{fill:#4285F4;} .st42{fill:#FBBC05;} .st43{fill:#EA4335;} </style> <g> <path d="M12,26H7c-0.8,0-1.6-0.4-2.1-1c-0.5-0.6-0.7-1.4-0.5-2.2L8.7,4l0,0c0.3-1.2,1.3-2,2.6-2h8.6c2.3,0,4.4,1,5.9,2.8 c1.4,1.8,2,4.1,1.5,6.4c-0.8,4-4.4,6.8-8.5,6.8h-3.2c-0.5,0-1,0.4-1.1,0.9L13,25.2C12.9,25.7,12.5,26,12,26z"></path> </g> <g> <g> <path class="st34" d="M12,26H7c-0.8,0-1.6-0.4-2.1-1c-0.5-0.6-0.7-1.4-0.5-2.2L8.7,4l0,0c0.3-1.2,1.3-2,2.6-2h8.6 c2.3,0,4.4,1,5.9,2.8c1.4,1.8,2,4.1,1.5,6.4c-0.8,4-4.4,6.8-8.5,6.8h-3.2c-0.5,0-1,0.4-1.1,0.9L13,25.2C12.9,25.7,12.5,26,12,26z"></path> </g> </g> <path class="st35" d="M29.3,11.3c0,0.1,0,0.2,0,0.3c-1,4.9-5.4,8.4-10.4,8.4h-2.5l-1.4,5.7C14.6,27.1,13.4,28,12,28h-2 c0.1,0.4,0.2,0.7,0.5,1c0.5,0.6,1.2,0.9,2,0.9H17c0.5,0,0.9-0.3,1-0.7l1.4-5.5c0.1-0.4,0.5-0.6,0.9-0.6h2.9c3.7,0,7-2.5,7.7-6 C31.3,15,30.7,12.8,29.3,11.3z"></path> </g></svg>
+          </div>
+          <span class="other-methods_text">Paypal</span>
+        </div>
+      </div>
+
+      <!-- pay later section -->
+      <h3 class="payment__subtitle">Buy Now Pay Later</h3>
+      <hr class="payment__divider">
+
+      <label class="bnpl">
+        <input type="radio" name="payment" class="bnpl__radio">
+        <div class="bnpl__details">
+          <p class="bnpl__title">Pay using Cumulus Bank</p>
+          <p class="bnpl__text">To be eligible for BNPL, you'll usually need to be at least 18 years old, have a bank account, and be a salaried individual.</p>
+        </div>
+      </label>
+
+      <!-- proceed to pay  button  -->
+      <button class="btn btn--full">&euro; Proceed To Pay</button>
+    </section>
+
+    <!--  Order Summary Section -->
+    <aside class="summary">
+      <h2 class="summary__title">Order Summary</h2>
+
+      <div class="summary__row">
+        <span>Item(s):</span>
+        <span>&euro;5,617.39</span>
+      </div>
+      <div class="summary__row">
+        <span>Delivery Fee:</span>
+        <span>&euro;0.00</span>
+      </div>
+
+      <hr class="summary__divider">
+
+      <div class="summary__row summary__row--total">
+        <span>Order Total:</span>
+        <span>&euro;5,617.39</span>
+      </div>
+
+      <button class="btn btn--full">&euro; Proceed To Pay</button>
+    </aside>
+  </main>
+   </div>
+</body>
+</html>
