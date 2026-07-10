@@ -333,3 +333,78 @@ body {
     margin-top: 10px;
   }
 }
+
+
+// (1024px and below)
+@media (max-width: 1024px) {
+
+  .header {
+    padding: 14px 40px;
+  }
+
+  .main {
+    padding: 40px;
+    gap: 20px;
+  }
+
+  .header__search {
+    margin: 0 20px;
+  }
+}
+
+
+//(768px and below)
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .header__logo {
+    text-align: center;
+  }
+
+  .header__search {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .header__right {
+    justify-content: space-between;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .payment,
+  .summary {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .other-methods {
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card-option__row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .payment__step-number {
+    left: 20px;
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+  }
+}
